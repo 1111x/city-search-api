@@ -40,7 +40,7 @@ The API should be accessible at [http://localhost:8080/suggestions](http://local
 }
 ```
 
-The config.properties defaults to using a Mongo datastore. Other data source implementations can be implemented using the DataSourceInterface. There are stubs for CSVDataSource, MySQLDataSource, and PostgresDataSource. Maven tests will fail unless a data source is setup.
+The config.properties defaults to using a Mongo datastore. Other data source implementations can be implemented using the DataSourceInterface, returning results as a JSONArray via the getSuggestions method. There are stubs for CSVDataSource, MySQLDataSource, and PostgresDataSource. Maven tests will fail unless a data source is setup.
 ```
 dataSourceImpl=com.saintsoftware.dataimpl.MongoDataSource
 #dataSourceImpl=com.saintsoftware.dataimpl.MySQLDataSource
